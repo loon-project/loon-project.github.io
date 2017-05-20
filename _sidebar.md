@@ -20,6 +20,5 @@
 - Advanced
   - [Asynchronous](async.md)
   - [Converter](converter.md)
-  - [Test](test.md)
 
-- [Changelog](changelog.md)
+- [Release Note](releasenote.md)
