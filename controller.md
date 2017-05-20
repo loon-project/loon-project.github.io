@@ -1,4 +1,4 @@
-<h1 align="center">Controller Overview</h1>
+<h1 align="center">Controller</h1>
 
 
 ## 1 What Does a Controller Do?

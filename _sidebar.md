@@ -9,13 +9,14 @@
 - Services
   - [Service](service.md)
 
-- Models
+- Data
   - [Model](model.md)
-  - [Converter](converter.md)
+  - [Mapper](mapper.md)
 
 - Advanced
   - [Application](application.md)
   - [Initializer](initializer.md)
+  - [Converter](converter.md)
   - [Test](test.md)
 
 - [Changelog](changelog.md)
