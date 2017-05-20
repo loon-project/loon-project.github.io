@@ -5,8 +5,11 @@
 
 Filter is a function that is run "before", "after" a controller action.
 
+<b>It have the same [parameter](controller.md) ability as the controller action.</b>
+
 
 ## 2 Usage
+
 
 "before" filters may halt the request cycle.
 A common "before" filter is one which requires that a user is logged in for an action to run.
@@ -48,4 +51,28 @@ while the except options means except `indexAction`, others all run after filter
 
 In a filter, it is important to call `next()` to continue the call chains and request to the next `Filter` or `Controller`.
 
+
+## 3 Data
+You can pass data between different `Controller, Filter, Middleware` use decorator `@Data`.
+
+```typescript
+@Filter()
+class FindUserFilter implements IMiddleware {
+
+  public use(@Data() data: any, @Next() next: Express.NextFunction) {
+    data.user = # findById();
+    next();
+  }
+}
+
+@RestController()
+@BeforeFilter(FindUserFilter)
+class PostController {
+
+  public(@Data() data: any, @Res() res: Express.Response) {
+    typeof data.user !== 'undefined' # => true
+  }
+}
+```
+In this example, `FindUserFilter` save user information with decorator `@Data`, then controller can use data.user directly.
 
