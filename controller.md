@@ -78,7 +78,19 @@ class AdminController {
 ```
 Above example shows how to use `@PathParam`, `@QueryParam`, and `@BodyParam`,
 the `@HeaderParam, @CookieParam` is the same usage. <br>
-Controller use `ConverterService` inside it, we will cover it in the [Converter](converter.md) chapter
+Controller can convert simple type `string, boolean, number` automatically by using `ConverterService` inside it:
+
+```typescript
+//...
+  public userAction(@QueryParam('flag') flag: boolean) {
+    flag === true or false
+  }
+
+//...
+
+```
+
+For convert to a model, we will cover it in the [Model](model.md) chapter.
 
 ## 5 Response
 Framework use express inside, so you can leverage the Express.Response object to send response to the user.
