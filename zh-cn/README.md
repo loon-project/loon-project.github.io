@@ -8,22 +8,22 @@
 
 <h1 align="center">Loon(气球)</h1>
 
-> Enterprise ready spring like framework build on Typescript and Express
+> 企业级类Spring 基于typescript 和 express 的 Nodejs 框架
 
-<h2 align="center">Features</h2>
+<h2 align="center">功能</h2>
 
-* Dependency Injection
-* Service class
-* Rest route and controller, param data injection support
-* Middleware 
-* Filter
-* Model
-* Converter
-* Initializer
+* 依赖注入
+* 服务类
+* Result 路由和控制器
+* 中间件
+* 过滤器
+* 模型
+* 转化器
+* 启动器
 
-Please refer to the [documentation](https://loon-project.github.io) for more details.
+请参考 [文档](https://loon-project.github.io/#/zh-cn/) 获得更多信息。
 
-<h2 align="center">Core Team</h2>
+<h2 align="center">团队</h2>
 <table>
   <tbody>
     <tr>

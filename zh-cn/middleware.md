@@ -3,13 +3,12 @@
 
 ## 1 什么是中间件
 
-中间件就是一个
-Middleware is a function runs before controller dividing by route.
+中间件就是一个应用在路由或者应用级别的一个方法。
 
 <b>它有和controller action 相同的处理 [参数](zh-cn/controller.md) 的能力。</b>
 
 
-## 2 Middleware
+## 2 中间件
 
 ```typescript
 @Middleware({order: 0})
@@ -23,22 +22,21 @@ class ELKMiddleware implements IMiddleware {
   }
 }
 ```
-The class decorated by `@Middleware` will automatically wire to application.
-In this example, `ELKMiddleware` should run as the first middleware,
-just add an option `{order: 0}` to ensure it run first.
+注解了 `@Middleware` 并且实现了 `IMiddleware` 的类自动会识别并加载为 `Middleware`。
+在这个例子中, `ELKMiddleware` 应该是第一个运行的中间件，
+只要在参数中添加 `{order: 0}` 就能保证是第一个运行的。
 
-Middleware also support `baseUrl` options to apply middleware to a group of routes
+中间件也支持 `baseUrl` 来使它应用在该路由上。
 ```typescript
 @Middleware({baseUrl: '/admin'})
 class AdminMiddleware implements IMiddleware {}
 ```
-The example shows add a middleware for the admin routes.
+这个例子显示了给 `/admin` 路由添加中间件。
 
 
-## 3 ErrorMiddleware
+## 3 错误中间件
 
-`@ErrorMiddleware` have the same usage with `@Middleware`, one different is that in the middleware use function,
- you can get the error object by using `@Err` decorator.
+`@ErrorMiddleware` 用法和 `@Middleware` 基本一样, 有一个不同点是你能通过 `@Err` 拿到错误 Object。
 
 ```typescript
 @ErrorMiddleware()

@@ -11,7 +11,7 @@
 
 - 数据
   - [模型](zh-cn/model.md)
-  - [映射](mapper.md)
+  - [映射](zh-cn/mapper.md)
 
 - 应用
   - [应用](zh-cn/application.md)
@@ -21,4 +21,4 @@
   - [异步](zh-cn/async.md)
   - [转化](zh-cn/converter.md)
 
-- [发布信息](releasenote.md)
+- [发布信息](zh-cn/releasenote.md)
