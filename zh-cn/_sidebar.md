@@ -9,6 +9,9 @@
 - 服务
   - [服务](zh-cn/service.md)
 
+- 事件
+  - [事件](zh-cn/event.md)
+
 - 数据
   - [模型](zh-cn/model.md)
   - [映射](zh-cn/mapper.md)

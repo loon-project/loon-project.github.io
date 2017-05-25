@@ -1,13 +1,16 @@
 - Getting started
   - [Quick start](quickstart.md)
 
-- Controllers
+- Controller
   - [Controller](controller.md)
   - [Filter](filter.md)
   - [Middleware](middleware.md)
 
-- Services
+- Service
   - [Service](service.md)
+
+- Event
+  - [Event](event.md)
 
 - Data
   - [Model](model.md)
