@@ -1,5 +1,11 @@
 <h2 align="center">Release Note</h2>
 
+### v1.1.0 (2017-05-25)
+* add event emit and listen support
+
+### v1.0.0 (2017-05-20)
+* documentation
+
 ### v0.8.0 (2017-04-18)
 * add test solution: use bootstrap function
 * add PropertyInherited decorator
